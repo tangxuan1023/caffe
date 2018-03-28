@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5584CA9-38D9-3100-BE0E-F302DD8C1B20}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>caffe</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\Study\Git\caffe\build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">caffe.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">caffe-d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\Study\Git\caffe\build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">caffe.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">caffe</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\boost-1_61;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\opencv;D:\Anaconda2\include;D:\Anaconda2\lib\site-packages\numpy\core\include;D:\Documents\Study\Git\caffe\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;BOOST_ALL_NO_LIB;USE_LMDB;USE_LEVELDB;CPU_ONLY;USE_OPENCV;WITH_PYTHON_LAYER;CAFFE_BUILDING_STATIC_LIB;CMAKE_WINDOWS_BUILD;CAFFE_VERSION=1.0.0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=__declspec(dllimport);GOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=__declspec(dllimport);H5_BUILT_AS_DYNAMIC_LIB=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;BOOST_ALL_NO_LIB;USE_LMDB;USE_LEVELDB;CPU_ONLY;USE_OPENCV;WITH_PYTHON_LAYER;CAFFE_BUILDING_STATIC_LIB;CMAKE_WINDOWS_BUILD;CAFFE_VERSION=1.0.0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=__declspec(dllimport);GOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=__declspec(dllimport);H5_BUILT_AS_DYNAMIC_LIB=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\boost-1_61;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\opencv;D:\Anaconda2\include;D:\Anaconda2\lib\site-packages\numpy\core\include;D:\Documents\Study\Git\caffe\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\boost-1_61;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\opencv;D:\Anaconda2\include;D:\Anaconda2\lib\site-packages\numpy\core\include;D:\Documents\Study\Git\caffe\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"D:\Program Files (x86)\cmake-3.10.1\bin\cmake.exe" -DMSVC_VERSION=1800 -DTARGET_FILE=D:/Documents/Study/Git/caffe/build/lib/Debug/caffe-d.lib -DOUTPUT_FILE=D:/Documents/Study/Git/caffe/build/caffe/include_symbols.hpp -P D:/Documents/Study/Git/caffe/cmake/WindowsCreateLinkHeader.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\boost-1_61;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\opencv;D:\Anaconda2\include;D:\Anaconda2\lib\site-packages\numpy\core\include;D:\Documents\Study\Git\caffe\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;USE_LMDB;USE_LEVELDB;CPU_ONLY;USE_OPENCV;WITH_PYTHON_LAYER;CAFFE_BUILDING_STATIC_LIB;CMAKE_WINDOWS_BUILD;CAFFE_VERSION=1.0.0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=__declspec(dllimport);GOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=__declspec(dllimport);H5_BUILT_AS_DYNAMIC_LIB=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;USE_LMDB;USE_LEVELDB;CPU_ONLY;USE_OPENCV;WITH_PYTHON_LAYER;CAFFE_BUILDING_STATIC_LIB;CMAKE_WINDOWS_BUILD;CAFFE_VERSION=1.0.0;GLOG_NO_ABBREVIATED_SEVERITIES;GOOGLE_GLOG_DLL_DECL=__declspec(dllimport);GOOGLE_GLOG_DLL_DECL_FOR_UNITTESTS=__declspec(dllimport);H5_BUILT_AS_DYNAMIC_LIB=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\boost-1_61;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\opencv;D:\Anaconda2\include;D:\Anaconda2\lib\site-packages\numpy\core\include;D:\Documents\Study\Git\caffe\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\boost-1_61;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include\opencv;D:\Anaconda2\include;D:\Anaconda2\lib\site-packages\numpy\core\include;D:\Documents\Study\Git\caffe\include;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"D:\Program Files (x86)\cmake-3.10.1\bin\cmake.exe" -DMSVC_VERSION=1800 -DTARGET_FILE=D:/Documents/Study/Git/caffe/build/lib/Release/caffe.lib -DOUTPUT_FILE=D:/Documents/Study/Git/caffe/build/caffe/include_symbols.hpp -P D:/Documents/Study/Git/caffe/cmake/WindowsCreateLinkHeader.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documents/Study/Git/caffe/src/caffe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files (x86)\cmake-3.10.1\bin\cmake.exe" -HD:/Documents/Study/Git/caffe -BD:/Documents/Study/Git/caffe/build --check-stamp-file D:/Documents/Study/Git/caffe/build/src/caffe/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/Study/Git/caffe/src/caffe/CMakeLists.txt;D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt;D:\Documents\Study\Git\caffe\cmake\Templates\export.hpp.in;D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\Study\Git\caffe\build\src\caffe\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documents/Study/Git/caffe/src/caffe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files (x86)\cmake-3.10.1\bin\cmake.exe" -HD:/Documents/Study/Git/caffe -BD:/Documents/Study/Git/caffe/build --check-stamp-file D:/Documents/Study/Git/caffe/build/src/caffe/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/Study/Git/caffe/src/caffe/CMakeLists.txt;D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt;D:\Documents\Study\Git\caffe\cmake\Templates\export.hpp.in;D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\Study\Git\caffe\build\src\caffe\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\blob.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\common.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\data_transformer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\internal_thread.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layer_factory.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\absval_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\accuracy_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\argmax_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\base_conv_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\base_data_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\batch_norm_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\batch_reindex_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\bias_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\bnll_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\concat_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\contrastive_loss_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\conv_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\crop_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\cudnn_conv_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\cudnn_lcn_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\cudnn_lrn_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\cudnn_pooling_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\cudnn_relu_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\cudnn_sigmoid_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\cudnn_softmax_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\cudnn_tanh_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\data_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\deconv_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\dropout_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\dummy_data_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\eltwise_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\elu_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\embed_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\euclidean_loss_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\exp_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\filter_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\flatten_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\hdf5_data_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\hdf5_output_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\hinge_loss_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\im2col_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\image_data_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\infogain_loss_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\inner_product_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\input_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\log_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\loss_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\lrn_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\lstm_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\lstm_unit_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\memory_data_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\multinomial_logistic_loss_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\mvn_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\neuron_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\parameter_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\pooling_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\power_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\prelu_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\recurrent_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\reduction_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\relu_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\reshape_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\rnn_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\scale_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\sigmoid_cross_entropy_loss_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\sigmoid_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\silence_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\slice_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\softmax_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\softmax_loss_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\split_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\spp_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\tanh_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\threshold_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\tile_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\layers\window_data_layer.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\net.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\parallel.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\solver.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\solver_factory.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\solvers\adadelta_solver.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\solvers\adagrad_solver.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\solvers\adam_solver.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\solvers\nesterov_solver.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\solvers\rmsprop_solver.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\solvers\sgd_solver.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\syncedmem.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\benchmark.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\blocking_queue.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\cudnn.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\db.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\db_leveldb.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\db_lmdb.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\hdf5.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\im2col.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\insert_splits.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\io.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\math_functions.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\signal_handler.cpp"  />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\src\caffe\util\upgrade_proto.cpp"  />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\blob.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\caffe.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\common.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\data_transformer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\filler.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\internal_thread.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layer_factory.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\absval_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\accuracy_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\argmax_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\base_conv_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\base_data_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\batch_norm_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\batch_reindex_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\bias_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\bnll_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\concat_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\contrastive_loss_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\conv_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\crop_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\cudnn_conv_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\cudnn_lcn_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\cudnn_lrn_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\cudnn_pooling_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\cudnn_relu_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\cudnn_sigmoid_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\cudnn_softmax_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\cudnn_tanh_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\data_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\deconv_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\dropout_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\dummy_data_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\eltwise_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\elu_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\embed_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\euclidean_loss_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\exp_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\filter_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\flatten_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\hdf5_data_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\hdf5_output_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\hinge_loss_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\im2col_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\image_data_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\infogain_loss_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\inner_product_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\input_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\log_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\loss_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\lrn_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\lstm_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\memory_data_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\multinomial_logistic_loss_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\mvn_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\neuron_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\parameter_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\pooling_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\power_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\prelu_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\python_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\recurrent_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\reduction_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\relu_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\reshape_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\rnn_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\scale_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\sigmoid_cross_entropy_loss_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\sigmoid_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\silence_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\slice_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\softmax_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\softmax_loss_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\split_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\spp_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\tanh_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\threshold_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\tile_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\layers\window_data_layer.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\net.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\parallel.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\sgd_solvers.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\solver.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\solver_factory.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\syncedmem.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\benchmark.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\blocking_queue.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\cudnn.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\db.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\db_leveldb.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\db_lmdb.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\device_alternate.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\format.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\hdf5.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\im2col.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\insert_splits.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\io.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\math_functions.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\mkl_alternate.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\nccl.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\rng.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\signal_handler.h" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\include\caffe\util\upgrade_proto.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\build\caffe_config.h" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\build\caffe\export.hpp" />
+    <ClInclude Include="D:\Documents\Study\Git\caffe\build\caffe\include_symbols.hpp" />
+    <None Include="D:\Documents\Study\Git\caffe\src\caffe\proto\caffe.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Documents\Study\Git\caffe\build\ZERO_CHECK.vcxproj">
+      <Project>{B9C74525-4005-3F73-895A-4A54348B7E2E}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Documents\Study\Git\caffe\build\src\caffe\caffeproto.vcxproj">
+      <Project>{9A908D62-5D02-30EF-BBF9-E38F3376A861}</Project>
+      <Name>caffeproto</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

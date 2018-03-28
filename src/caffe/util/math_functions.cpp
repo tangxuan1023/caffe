@@ -20,13 +20,18 @@ void caffe_cpu_gemm<float>(const CBLAS_TRANSPOSE TransA,
       ldb, beta, C, N);
 }
 
+/*
+* M: The number of input A matrix's rows and result of C matrix's rows(please care about transposing)
+* N: The number of input B matrix's columns and result of C matrix's columns(please care about transposing)
+* K: The number of input A matrix's columns and B matrix's rows(please care about transposing)
+*/
 template<>
 void caffe_cpu_gemm<double>(const CBLAS_TRANSPOSE TransA,
     const CBLAS_TRANSPOSE TransB, const int M, const int N, const int K,
     const double alpha, const double* A, const double* B, const double beta,
     double* C) {
-  int lda = (TransA == CblasNoTrans) ? K : M;
-  int ldb = (TransB == CblasNoTrans) ? N : K;
+  int lda = (TransA == CblasNoTrans) ? K : M;  //The number of A matrix's columns(raw input, don't care about transposing)
+  int ldb = (TransB == CblasNoTrans) ? N : K;  //something like lda too
   cblas_dgemm(CblasRowMajor, TransA, TransB, M, N, K, alpha, A, lda, B,
       ldb, beta, C, N);
 }

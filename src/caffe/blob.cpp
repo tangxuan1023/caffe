@@ -22,7 +22,7 @@ void Blob<Dtype>::Reshape(const int num, const int channels, const int height,
 template <typename Dtype>
 void Blob<Dtype>::Reshape(const vector<int>& shape) {
   CHECK_LE(shape.size(), kMaxBlobAxes);
-  count_ = 1;
+  count_ = 1;  //reference line 36
   shape_.resize(shape.size());
   if (!shape_data_ || shape_data_->size() < shape.size() * sizeof(int)) {
     shape_data_.reset(new SyncedMemory(shape.size() * sizeof(int)));
