@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A908D62-5D02-30EF-BBF9-E38F3376A861}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>caffeproto</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\Study\Git\caffe\build\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">caffeproto.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">caffeproto-d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\Study\Git\caffe\build\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">caffeproto.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">caffeproto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CAFFE_VERSION=1.0.0;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CAFFE_VERSION=1.0.0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CAFFE_VERSION=1.0.0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CAFFE_VERSION=1.0.0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Documents\Study\Git\caffe\build\include;D:\Documents\Study\Git\caffe\build;C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Documents/Study/Git/caffe/src/caffe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files (x86)\cmake-3.10.1\bin\cmake.exe" -HD:/Documents/Study/Git/caffe -BD:/Documents/Study/Git/caffe/build --check-stamp-file D:/Documents/Study/Git/caffe/build/src/caffe/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/Study/Git/caffe/src/caffe/CMakeLists.txt;D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt;D:\Documents\Study\Git\caffe\cmake\Templates\export.hpp.in;D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\Study\Git\caffe\build\src\caffe\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Documents/Study/Git/caffe/src/caffe/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files (x86)\cmake-3.10.1\bin\cmake.exe" -HD:/Documents/Study/Git/caffe -BD:/Documents/Study/Git/caffe/build --check-stamp-file D:/Documents/Study/Git/caffe/build/src/caffe/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/Study/Git/caffe/src/caffe/CMakeLists.txt;D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt;D:\Documents\Study\Git\caffe\cmake\Templates\export.hpp.in;D:\Documents\Study\Git\caffe\src\caffe\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\Study\Git\caffe\build\src\caffe\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Documents\Study\Git\caffe\build\CMakeFiles\70f9050815e6d709173fe88348d9b314\caffe.pb.cc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running C++/Python protocol buffer compiler on D:/Documents/Study/Git/caffe/src/caffe/proto/caffe.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files (x86)\cmake-3.10.1\bin\cmake.exe" -E make_directory D:/Documents/Study/Git/caffe/build/include/caffe/proto
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\bin\protoc.exe --cpp_out D:/Documents/Study/Git/caffe/build/include/caffe/proto -I D:/Documents/Study/Git/caffe/src/caffe/proto D:/Documents/Study/Git/caffe/src/caffe/proto/caffe.proto
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\bin\protoc.exe --python_out D:/Documents/Study/Git/caffe/build/include/caffe/proto -I D:/Documents/Study/Git/caffe/src/caffe/proto D:/Documents/Study/Git/caffe/src/caffe/proto/caffe.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Documents/Study/Git/caffe/build/CMakeFiles/70f9050815e6d709173fe88348d9b314/caffe.pb.cc.rule;D:\Documents\Study\Git\caffe\src\caffe\proto\caffe.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe.pb.cc;D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe.pb.h;D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe_pb2.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running C++/Python protocol buffer compiler on D:/Documents/Study/Git/caffe/src/caffe/proto/caffe.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files (x86)\cmake-3.10.1\bin\cmake.exe" -E make_directory D:/Documents/Study/Git/caffe/build/include/caffe/proto
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\bin\protoc.exe --cpp_out D:/Documents/Study/Git/caffe/build/include/caffe/proto -I D:/Documents/Study/Git/caffe/src/caffe/proto D:/Documents/Study/Git/caffe/src/caffe/proto/caffe.proto
+if %errorlevel% neq 0 goto :cmEnd
+C:\Users\Hunta\.caffe\dependencies\libraries_v120_x64_py27_1.1.0\libraries\bin\protoc.exe --python_out D:/Documents/Study/Git/caffe/build/include/caffe/proto -I D:/Documents/Study/Git/caffe/src/caffe/proto D:/Documents/Study/Git/caffe/src/caffe/proto/caffe.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Documents/Study/Git/caffe/build/CMakeFiles/70f9050815e6d709173fe88348d9b314/caffe.pb.cc.rule;D:\Documents\Study\Git\caffe\src\caffe\proto\caffe.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe.pb.cc;D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe.pb.h;D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe_pb2.py</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe.pb.h" />
+    <ClCompile Include="D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe.pb.cc"  />
+    <None Include="D:\Documents\Study\Git\caffe\build\include\caffe\proto\caffe_pb2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Documents\Study\Git\caffe\build\ZERO_CHECK.vcxproj">
+      <Project>{B9C74525-4005-3F73-895A-4A54348B7E2E}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

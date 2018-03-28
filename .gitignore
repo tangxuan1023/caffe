@@ -72,8 +72,7 @@ models/*
 *lmdb
 
 # build, distribute, and bins (+ python proto bindings)
-./build/*.txt
-./build/*.cmake
+./build/*
 .build_debug/*
 .build_release/*
 distribute/*
@@ -116,11 +115,13 @@ MANIFEST-*
 [Dd]ebugPublic/
 [Rr]elease/
 x64/
+build/**/*.txt
+build/**/*.cmake
 build/*
-!build/caffe/*
-!build/include/*
-!build/src/*
-!build/**/*.sln
+!build/caffe/
+!build/include/
+!build/src/
+!build/**/*.vcxproj
 !build/**/*.props
 !build/**/*.filters
 build/**/CMakeFiles/*
@@ -135,6 +136,8 @@ build/**/*.cmake
 !*.h
 !*.hpp
 !*.cu
+!*.cc
+!*.py
 
 # Roslyn cache directories
 *.ide/
