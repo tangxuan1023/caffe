@@ -123,6 +123,7 @@ build/*
 !build/*.props
 !build/*.filters
 build/CMakeFiles/*
+CMakeFiles/*
 bld/
 [Bb]in/
 [Oo]bj/
