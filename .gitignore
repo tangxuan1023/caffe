@@ -116,9 +116,9 @@ MANIFEST-*
 [Rr]elease/
 x64/
 build/*
-!build/caffe/
-!build/include/
-!build/src/
+!build/caffe/*
+!build/include/*
+!build/src/*
 !build/**/*.sln
 !build/**/*.props
 !build/**/*.filters
@@ -130,6 +130,10 @@ build/**/*.cmake
 *.lock
 *.log
 *.stamp*
+!*.cpp
+!*.h
+!*.hpp
+!*.cu
 
 # Roslyn cache directories
 *.ide/
