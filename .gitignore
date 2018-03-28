@@ -109,6 +109,7 @@ MANIFEST-*
 !*.sln
 !*.props
 !*.filters
+!*.vcxproj
 
 # Build results
 [Dd]ebug/
