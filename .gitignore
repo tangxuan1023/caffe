@@ -119,16 +119,15 @@ build/*
 !build/caffe/
 !build/include/
 !build/src/
-!build/*.sln
-!build/*.props
-!build/*.filters
-build/CMakeFiles/*
-CMakeFiles/*
+!build/**/*.sln
+!build/**/*.props
+!build/**/*.filters
+build/**/CMakeFiles/*
 bld/
 [Bb]in/
 [Oo]bj/
-bulid/*.cmake
-bulid/*.lock
+build/**/*.cmake
+*.lock
 *.log
 *.stamp*
 
