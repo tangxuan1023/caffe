@@ -22,7 +22,7 @@ void Blob<Dtype>::Reshape(const int num, const int channels, const int height,
 template <typename Dtype>
 void Blob<Dtype>::Reshape(const vector<int>& shape) {
   CHECK_LE(shape.size(), kMaxBlobAxes);
-  count_ = 1;  //reference line 36
+  count_ = 1;  //reference line 36 `count_ *= shape[i];`
   shape_.resize(shape.size());
   if (!shape_data_ || shape_data_->size() < shape.size() * sizeof(int)) {
     shape_data_.reset(new SyncedMemory(shape.size() * sizeof(int)));
@@ -35,7 +35,7 @@ void Blob<Dtype>::Reshape(const vector<int>& shape) {
     }
     count_ *= shape[i];
     shape_[i] = shape[i];
-    shape_data[i] = shape[i];
+    shape_data[i] = shape[i];  //in fact, modified pointer which return by `shape_data_->mutable_cpu_data()`, reference line 30
   }
   if (count_ > capacity_) {
     capacity_ = count_;

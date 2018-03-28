@@ -127,7 +127,8 @@ CMakeFiles/*
 bld/
 [Bb]in/
 [Oo]bj/
-*.cmake
+bulid/*.cmake
+bulid/*.lock
 *.log
 *.stamp*
 

@@ -51,7 +51,7 @@ inline void SyncedMemory::to_cpu() {
       CaffeMallocHost(&cpu_ptr_, size_, &cpu_malloc_use_cuda_);
       own_cpu_data_ = true;
     }
-    caffe_gpu_memcpy(size_, gpu_ptr_, cpu_ptr_);
+    caffe_gpu_memcpy(size_, gpu_ptr_, cpu_ptr_);  //copy gpu data (pointer) to cpu 
     head_ = SYNCED;
 #else
     NO_GPU;
@@ -102,7 +102,7 @@ void SyncedMemory::set_cpu_data(void* data) {
   if (own_cpu_data_) {
     CaffeFreeHost(cpu_ptr_, cpu_malloc_use_cuda_);
   }
-  cpu_ptr_ = data;
+  cpu_ptr_ = data;  // `cpu_ptr_` is re-pointed to `data`, manage memory space externally
   head_ = HEAD_AT_CPU;
   own_cpu_data_ = false;
 }
