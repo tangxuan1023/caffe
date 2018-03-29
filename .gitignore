@@ -121,6 +121,7 @@ build/*
 !build/caffe/
 !build/include/
 !build/src/
+!build/**/*.sln
 !build/**/*.vcxproj
 !build/**/*.props
 !build/**/*.filters
